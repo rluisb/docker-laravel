@@ -2,7 +2,7 @@ steps:
 
   - id: "Running docker-compose"
     name: 'docker/compose'
-    args: ['-f', './devops/docker/laravel/docker-compose.cloudbuild.yml', 'up', '-d']
+    args: ['-f', './docker-compose.cloudbuild.yml', 'up', '-d']
 
   - id: "Chown in /var/www"
     name: 'docker'
